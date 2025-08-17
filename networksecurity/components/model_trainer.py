@@ -29,12 +29,12 @@ from lightgbm import LGBMClassifier
 import mlflow
 from urllib.parse import urlparse
 
-# import dagshub
+import dagshub
 # dagshub.init(repo_owner='kandarpdave2003', repo_name='networksecurity', mlflow=True)
 
-# os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/kandarpdave2003/Network_Security.mlflow"
-# os.environ["MLFLOW_TRACKING_USERNAME"]="kandarpdave2003"
-# os.environ["MLFLOW_TRACKING_PASSWORD"]="39ca483cf87d3aebe08a5254bcd4ee02aaf461c0"
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/kandarpdave2003/Network_Security.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="kandarpdave2003"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="39ca483cf87d3aebe08a5254bcd4ee02aaf461c0"
 
 
 
@@ -146,7 +146,7 @@ class ModelTrainer:
         Network_Model=NetworkModel(preprocessor=preprocessor,model=best_model)
         save_object(self.model_trainer_config.trained_model_file_path,obj=NetworkModel)
         #model pusher
-        #save_object("final_model/model.pkl",best_model)
+        save_object("final_models/model.pkl",best_model)
         
 
         ## Model Trainer Artifact

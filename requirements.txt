@@ -10,4 +10,7 @@ mlflow
 dagshub
 xgboost
 lightgbm
+fastapi
+uvicorn
+starlette
 ## -e .
