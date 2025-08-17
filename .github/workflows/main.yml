@@ -254,7 +254,7 @@ jobs:
 
       # 📤 Upload Docker image as an artifact
       - name: Upload Docker image artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: myapp-docker-image
           path: myapp.tar
