@@ -6,4 +6,8 @@ certifi
 pymongo
 scikit-learn
 pyaml
+mlflow
+dagshub
+xgboost
+lightgbm
 ## -e .
